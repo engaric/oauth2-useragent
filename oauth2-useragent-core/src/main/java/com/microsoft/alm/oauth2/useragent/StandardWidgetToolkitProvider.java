@@ -126,6 +126,8 @@ public class StandardWidgetToolkitProvider extends Provider {
 
         // https://www.eclipse.org/swt/faq.php#specifyxulrunner
         relayProperty(command, "org.eclipse.swt.browser.XULRunnerPath");
+        relayProperty(command, "org.eclipse.swt.browser.DefaultType");
+        relayProperty(command, "org.eclipse.swt.browser.EdgeDir");
 
         // https://www.eclipse.org/swt/faq.php#specifyprofile
         relayProperty(command, "org.eclipse.swt.browser.MOZ_PROFILE_PATH");
