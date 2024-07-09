@@ -76,7 +76,9 @@ public class SwtInterceptingBrowser {
         this.display.asyncExec(new Runnable() {
             @Override
             public void run() {
-                browser.setUrl(destinationUriString);
+                String[] headers = {"user-agent: oauth-user-agent-swt" };
+                String postData = null;
+                browser.setUrl(destinationUriString, postData, headers );
             }
         });
     }
